@@ -83,8 +83,6 @@ inOrder() - Existem várias maneiras de percorrer os elementos de uma árvore bi
 ● Fator de Balanceamento: Numa árvore AVL devemos ter como FB de cada nó entre [-1, 0, 1]
 |hD -hE| <= 1  ➜  hD = Altura da subárvore à direita do nó Pai| hE = Altura da subárvore à esquerda do nó Pai.
 
-● OBS: 
-
 FB = 0, significa hD == hE, ou seja, a árvore está balanceada!
 
 FB = +1, +2 ou +(...), significa que hD > hE, ou seja, a árvore AVL está desbalanceada à direita!
