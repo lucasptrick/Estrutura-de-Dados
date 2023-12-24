@@ -16,7 +16,7 @@ As estruturas de dados podem ser categorizadas em dois tipos principais: lineare
 
 ● Sobre TAD Lineares:
 
-➔ Listas
+➔ Listas:
 Estrutura de dados em que os elementos são dispostos de forma linear.
 Como um Tipo Abstrato de Dados (TAD), uma lista baseada em vetores S tem os seguintes métodos:
 
@@ -29,7 +29,7 @@ add(i,e) - substitui por e e retorna o elemento com índice i;
 remove(i) - remove de S o elemento de índice i.
 
 
-➔ Pilhas
+➔ Pilhas:
 Estrutura de dados simples, porém muioto importantes onde o útlimo elemento que entra é o primeiro a sair, "LIFO". Formalmente, uma pilha S é um tipo abstrato de dados (TAD) que suporta dois métodos:
 
 push(e) - Insere o elemento e no topo da pilha;
@@ -45,7 +45,7 @@ isEmpty() - Retorna um booleano indicando se a pilha está vazia;
 top() - Retorna o elemento no topo da pilha, sem retirá-lo; Ocorre um erro se a pilha estiver vazia.
 
 
-➔ Filas
+➔ Filas:
 Formalmente, o tipo abstrato de dados Fila, define uma coleção de objetos em uma sequência. O 1º Elemento que entra é o 1ºElemento a sair, "FIFO", na qual o acesso aos elementos e sua remoção são restritos ao primeiro elemento da sequência, chamada de fim da fila. Possui dois métodos fundamentais:
 
 enqueue(e) - insere o elemento e no fim da fila;
@@ -65,7 +65,7 @@ front() - Retorna, mas não remove, o objeto na frente da fila. Ocorre um erro s
 
 ● Sobre TAD Não-Lineares:
 
-➔ Arvores
+➔ Arvores:
 É uma estrutura de dados de árvore especial que possui propriedades que facilitam a busca eficiente e a ordenação de elementos. A característica fundamental de uma árvore binária de busca é que, para cada nó na árvore, os valores em seus subárvores à esquerda são menores do que o valor no próprio nó, e os valores em suas subárvores à direita são maiores:
 
 insert(e) - Adiciona um novo elemento à árvore mantendo a propriedade de ordenação.
@@ -77,7 +77,7 @@ getNo(e) - Procura por um elemento específico na árvore.
 inOrder() - Existem várias maneiras de percorrer os elementos de uma árvore binária de busca, incluindo travessias em ordem (in-order), pré-ordem (pre-order) e pós-ordem (post-order).
 
 
-➔ Grafo
+➔ Grafo:
 É uma forma de árvore binária de busca balanceada. Ela foi projetada para manter automaticamente o equilíbrio durante as operações de inserção e remoção, garantindo que a altura da árvore permaneça logarítmica em relação ao número de elementos. 
 
 ● Fator de Balanceamento: Numa árvore AVL devemos ter como FB de cada nó entre [-1, 0, 1]
