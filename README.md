@@ -19,31 +19,45 @@ As estruturas de dados podem ser categorizadas em dois tipos principais: lineare
 ➔ Listas
 Estrutura de dados em que os elementos são dispostos de forma linear.
 Como um Tipo Abstrato de Dados (TAD), uma lista baseada em vetores S tem os seguintes métodos:
+
 get(i) - retorna o elemento de S com índice i;
+
 set(i,e) - substitui por e e retorna o elemento com índice i;
+
 add(i,e) - substitui por e e retorna o elemento com índice i;
+
 remove(i) - remove de S o elemento de índice i.
 
 
 ➔ Pilhas
 Estrutura de dados simples, porém muioto importantes onde o útlimo elemento que entra é o primeiro a sair, "LIFO". Formalmente, uma pilha S é um tipo abstrato de dados (TAD) que suporta dois métodos:
+
 push(e) - Insere o elemento e no topo da pilha;
+
 pop() - Remove o elemento no topo da pilha e o retorna; Ocorre um erro se a pilha estiver vazia.
 
 >> Adicionalmente, inclui os seguintes métodos:
+
 size() - Retorna o número de elementos da pilha;
+
 isEmpty() - Retorna um booleano indicando se a pilha está vazia;
+
 top() - Retorna o elemento no topo da pilha, sem retirá-lo; Ocorre um erro se a pilha estiver vazia.
 
 
 ➔ Filas
 Formalmente, o tipo abstrato de dados Fila, define uma coleção de objetos em uma sequência. O 1º Elemento que entra é o 1ºElemento a sair, "FIFO", na qual o acesso aos elementos e sua remoção são restritos ao primeiro elemento da sequência, chamada de fim da fila. Possui dois métodos fundamentais:
+
 enqueue(e) - insere o elemento e no fim da fila;
+
 dequeue() - retira e retorna o onjeto da frente da fila. Ocorre um erro se a fila estiver vazia.
 
 >> Adicionalmente, inclui os seguintes métodos:
+
 size()-  Retorna o número de objetos na fila;
+
 isEmpty() - Retorna um booleano indicando se a fila está vazia;
+
 front() - Retorna, mas não remove, o objeto na frente da fila. Ocorre um erro se a fila estiver vazia.
 
 
@@ -53,9 +67,13 @@ front() - Retorna, mas não remove, o objeto na frente da fila. Ocorre um erro s
 
 ➔ Arvores
 É uma estrutura de dados de árvore especial que possui propriedades que facilitam a busca eficiente e a ordenação de elementos. A característica fundamental de uma árvore binária de busca é que, para cada nó na árvore, os valores em seus subárvores à esquerda são menores do que o valor no próprio nó, e os valores em suas subárvores à direita são maiores:
+
 insert(e) - Adiciona um novo elemento à árvore mantendo a propriedade de ordenação.
+
 remove(e) - Remove um elemento da árvore mantendo a propriedade de ordenação.
+
 getNo(e) - Procura por um elemento específico na árvore.
+
 inOrder() - Existem várias maneiras de percorrer os elementos de uma árvore binária de busca, incluindo travessias em ordem (in-order), pré-ordem (pre-order) e pós-ordem (post-order).
 
 
@@ -64,8 +82,12 @@ inOrder() - Existem várias maneiras de percorrer os elementos de uma árvore bi
 
 ● Fator de Balanceamento: Numa árvore AVL devemos ter como FB de cada nó entre [-1, 0, 1]
 |hD -hE| <= 1  ➜  hD = Altura da subárvore à direita do nó Pai| hE = Altura da subárvore à esquerda do nó Pai.
+
 ● OBS: 
+
 FB = 0, significa hD == hE, ou seja, a árvore está balanceada!
+
 FB = +1, +2 ou +(...), significa que hD > hE, ou seja, a árvore AVL está desbalanceada à direita!
+
 FB = -1, -2 ou -(...), significa que hD < hE, ou seja, a árvore AVL está desbalanceada à esquerda!
 
